@@ -63,6 +63,8 @@ console.log(fromBinaryUUID(binaryID.buffer), " === ", binaryID.uuid);
 */
 ```
 
+> **NOTE:** If you are not using `import` you may either use the named export `createBinaryUUID` `require('binary-uuid').createBinaryUUID` or use the `default` value (`require('binary-uuid').default`).
+
 ### From UUID to Binary UUID
 
 If you have a UUID already and need it as the `binary(16)` form:
