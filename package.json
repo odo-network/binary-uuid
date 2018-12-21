@@ -1,6 +1,6 @@
 {
   "name": "binary-uuid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates sql-friendly binary(16) uuids the right way.",
   "main": "src/binary-uuid.js",
   "author": "odo",

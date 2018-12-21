@@ -6,6 +6,14 @@ This is important for `mysql` and similar that will index the value based upon t
 
 For more information on why this is critical, see [Store UUIDs in an Optimized Way](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/).
 
+## Installation
+
+```
+yarn add binary-uuid
+// OR
+npm install --save binary-uuid
+```
+
 ## UUIDv1
 
 It is important when using the UUID's that we use `UUIDv1` and not `v4`. This is because `v4` is inherently random and thus will cause major performance issues if indexed with your database.
