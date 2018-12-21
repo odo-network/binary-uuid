@@ -10,8 +10,6 @@ function fromBinaryUUID(buf) {
   ].join("-");
 }
 
-module.exports.fromBinaryUUID = fromBinaryUUID;
-
 function toBinaryUUID(uuid) {
   const buf = Buffer.from(uuid.replace(/-/g, ""), "hex");
   return Buffer.concat([
@@ -21,8 +19,6 @@ function toBinaryUUID(uuid) {
     buf.slice(8, 16)
   ]);
 }
-
-module.exports.toBinaryUUID = toBinaryUUID;
 
 function createBinaryUUID() {
   const uuid = v1();
@@ -42,5 +38,7 @@ function createBinaryUUID() {
 }
 
 module.exports = createBinaryUUID;
+module.exports.toBinaryUUID = toBinaryUUID;
+module.exports.fromBinaryUUID = fromBinaryUUID;
 module.exports.createBinaryUUID = createBinaryUUID;
 module.exports.default = createBinaryUUID;
