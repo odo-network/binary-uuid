@@ -41,5 +41,6 @@ function createBinaryUUID() {
   );
 }
 
+module.exports = createBinaryUUID;
 module.exports.createBinaryUUID = createBinaryUUID;
 module.exports.default = createBinaryUUID;
