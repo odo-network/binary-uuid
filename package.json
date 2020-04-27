@@ -22,6 +22,7 @@
     "sequelize"
   ],
   "scripts": {
+    "prepublishOnly": "yarn build",
     "build": "tsc"
   },
   "devDependencies": {
