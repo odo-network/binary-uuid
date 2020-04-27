@@ -1,8 +1,9 @@
 {
   "name": "binary-uuid",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generates sql-friendly binary(16) uuids the right way.",
   "main": "dist/index.js",
+  "module": "src/index.ts",
   "author": "odo",
   "license": "MIT",
   "reveal": true,
